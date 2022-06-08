@@ -1,0 +1,68 @@
+html, body{
+    margin: 0;
+    background-color: rgb(32, 33, 36);
+    height: 100%;
+}
+.banner{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+.logo{
+    width: 270px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 76%;
+    gap: 20px 0;
+}
+.form_banner{
+    display: flex;
+    flex-direction: column;
+}
+.button_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 14px;
+}
+.button_container > input{
+    padding: 8px 14px;
+    border: 0;
+    background-color: rgb(48, 49, 52);
+    color: white;
+    margin-top: 26px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.button_container > input:hover{
+    border: 1px solid green;
+    /* border: 1px solid rgb(98, 101, 109); */
+    box-sizing: border-box;
+}
+.search_bar{
+    background-color: rgb(32, 33, 36);
+    width: 560px;
+    height: 42px;
+    border-radius: 23px;
+    border: 1px solid rgb(98, 101, 109);
+    display: block;
+    color: white;
+    font-size: 16px;
+    transition: 0.15;
+    padding-left: 36px;
+    box-sizing: border-box;
+}
+.search_bar:hover{
+    background-color: rgb(48, 49, 52);
+    border: 0;
+    padding-left: 37px;
+}
+.search_bar:focus{
+    outline: none;
+}
