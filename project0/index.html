@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="general.css">
     </head>
     <body>
+        <img class="logo42" src="assets/42_logo_white.png">
         <div class="banner">
             <button class="button_hover_box">
                 <button onclick="window.location.href='image.html';" class="search_img">Google Images</button>
@@ -14,13 +15,15 @@
             </button>
         </div>
         <div class="container">
-            <img class="logo" src="assets/google_logo.png" alt="google_logo">
+            <div class="image_wrapper">
+                <img class="logo" src="assets/google_logo.png" alt="google_logo">
+            </div>
             <div>
                 <form class="form_banner" action="https://www.google.com/search">
                     <input class="search_bar" type="text" name="q">
                     <div class="button_container">
                         <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling Lucky">
+                        <input type="submit" name ="btnI" value="I'm Feeling Lucky">
                     </div>
                 </form>
             </div>

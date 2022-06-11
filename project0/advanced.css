@@ -1,0 +1,67 @@
+#advanced_logo{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+}
+.advanced_logo{
+    width: 100px;
+}
+.advanced_container{
+    margin-top: 120px;
+}
+.advanced_container > hr{
+    height: 1px;
+    background-color: white;
+    border: 0;
+    margin-top: 20px;
+}
+.header_text{
+    color: rgb(242, 139, 130);
+    padding-left: 50px;
+    font-size: 20px;
+}
+.box_container{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    color: rgb(189, 193, 198);
+    flex-direction: column;
+    row-gap: 24px;
+}
+.box_header{
+    color:white;
+}
+.box_item{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.box_container .search{
+    position: absolute;
+    background-color: rgb(32, 33, 36);
+    left: 220px;
+    border: 1px solid rgb(95, 99, 104);
+    height: 20px;
+    font-size: 12px;
+    color: rgb(189, 193, 198);
+    padding: 3px 6px;
+    width: 400px;
+}
+.box_container .search:focus{
+    border: 1px solid rgb(138, 180, 248);
+    outline: 0;
+}
+.box_item >input{
+    background-color: #8ab4f8;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 16px;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid #8ab4f8;
+}
+.box_item >.submit:hover{
+    background-color: rgb(174, 203, 250);
+    border: 1px solid rgb(47, 91, 183);
+}

@@ -3,8 +3,10 @@
     <head>
         <title>Advanced</title>
         <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="advanced.css">
     </head>
     <body>
+        <img class="logo42" src="assets/42_logo_white.png">
         <div class="banner">
             <button class="button_hover_box">
                 <button onclick="window.location.href='index.html';" class="search_img">Home Page</button>
@@ -13,14 +15,37 @@
                 <button onclick="window.location.href='image.html';" class="advanced">Google Images</button>
             </button>
         </div>
-        <div class="container">
-            <img class="logo" src="assets/google_logo.png" alt="google_logo">
+        <div id="advanced_logo">
+            <img class="advanced_logo" src="assets/google_logo.png" alt="google_logo">
+        </div>
+        <div class="advanced_container">
+            <div class="header_text">
+                Advanced Search
+            </div>
+            <hr></hr>
             <div>
-                <form class="form_banner" action="https://www.google.com/search">
-                    <input class="search_bar" type="text" name="q">
-                    <div class="button_container">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling Lucky">
+                <form class="box_container" action="https://www.google.com/search">
+                    <div class="box_header">
+                        Find pages with...
+                    </div>
+                    <div class="box_item">
+                        all these words:
+                        <input type="text" class="search" name="as_q"></input>
+                    </div>
+                    <div class="box_item">
+                        this exact word or phrase:
+                        <input type="text" class="search" name="as_epq"></input>
+                    </div>
+                    <div class="box_item">
+                        any of these words:
+                        <input type="text" class="search" name="as_oq"></input>
+                    </div>
+                    <div class="box_item">
+                        none of these words:
+                        <input type="text" class="search" name="as_eq"></input>
+                    </div>
+                    <div class="box_item">
+                        <input class =submit type="submit" value="Advanced Search">
                     </div>
                 </form>
             </div>
