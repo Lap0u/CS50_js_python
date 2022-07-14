@@ -5,12 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
-
+    <h1>The page you asked for doesn't exist yet, click this link to create a new one or select an available page on the list</h1>
+    <hr>
     <ul>
         {% for entry in entries %}
-            <li><a href="{% url 'encyclopedia:entry' entry %}">{{ entry }}</a> </li>
+            <li>{{ entry }}</li>
         {% endfor %}
     </ul>
-
 {% endblock %}

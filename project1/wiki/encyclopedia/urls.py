@@ -1,8 +1,12 @@
 from django.urls import path
 
-from . import views,util
+from . import views
+app_name = "encyclopedia"
+
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("<str:entry>", views.getPage, name="get")
+    path("", views.notfound, name="notfound"),
+    path("wiki/<str:entry>", views.entry, name="entry")
+
 ]
